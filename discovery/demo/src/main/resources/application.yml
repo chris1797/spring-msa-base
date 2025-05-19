@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: discovery-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/do_develop
+    driver-class-name: org.postgresql.Driver
+    username:
+    password:
+#    user:
+#      name: admin
+#      password: admin
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    register-with-eureka: false # discovery 자신은 등록 X
+    fetch-registry: false # discovery 서버에서 다른 서비스 정보를 가져오지 않음
+
