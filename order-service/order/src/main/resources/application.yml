@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: order-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/do_develop
+    username:
+    password:
+
+server:
+  port: 8082
+
+
+eureka:
+  client:
+    service-url:
+        defaultZone: http://localhost:8080/eureka
+  instance:
+      prefer-ip-address: true
